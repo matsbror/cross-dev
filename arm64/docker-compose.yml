@@ -1,0 +1,10 @@
+version: '3'
+services:
+  riscv64:
+    image: arm64
+    privileged: true
+    container_name: arm64_container
+    volumes:
+      - ./shared:/home/ace5g/shared
+    command: tail -f /dev/null  # Keeps the container running in the foreground
+
